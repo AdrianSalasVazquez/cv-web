@@ -33,21 +33,17 @@ msgstr "Nativo"
 
 #: cv/models/language.py:20
 msgid "language"
-msgstr ""
+msgstr "idioma"
 
 #: cv/models/language.py:21
 msgid "languages"
 msgstr "idiomas"
 
 #: cv/models/profile.py:17
-#, fuzzy
-#| msgid "Profile"
 msgid "profile"
 msgstr "perfil"
 
 #: cv/models/profile.py:18
-#, fuzzy
-#| msgid "Profile"
 msgid "profiles"
 msgstr "perfiles"
 

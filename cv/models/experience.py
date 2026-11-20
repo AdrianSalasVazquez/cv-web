@@ -14,7 +14,7 @@ class ExperiencePoint(models.Model):
     experience = models.ForeignKey(
         Experience, on_delete=models.CASCADE, related_name="points"
     )
-    text = models.CharField(max_length=300)
+    text = models.TextField()
     order = models.PositiveIntegerField(default=0)
 
     class Meta:

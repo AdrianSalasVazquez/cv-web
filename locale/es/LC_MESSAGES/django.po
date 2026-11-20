@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-17 11:59+0100\n"
+"POT-Creation-Date: 2026-11-20 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
-#: config/settings.py:119
-msgid "Español"
-msgstr "Español"
 
-#: config/settings.py:119
-msgid "English"
-msgstr "Inglés"
+#: cv/models/education.py:10 cv/models/education.py:11
+msgid "education"
+msgstr "educación"
+
+#: cv/models/experience.py:9 cv/models/experience.py:10
+msgid "experience"
+msgstr "experiencia"
+
+#: cv/models/language.py:12
+msgid "Native"
+msgstr "Nativo"
+
+#: cv/models/language.py:20
+msgid "language"
+msgstr ""
+
+#: cv/models/language.py:21
+msgid "languages"
+msgstr "idiomas"
+
+#: cv/models/profile.py:17
+#, fuzzy
+#| msgid "Profile"
+msgid "profile"
+msgstr "perfil"
+
+#: cv/models/profile.py:18
+#, fuzzy
+#| msgid "Profile"
+msgid "profiles"
+msgstr "perfiles"
+
+#: cv/models/project.py:17
+msgid "project"
+msgstr "proyecto"
+
+#: cv/models/project.py:18
+msgid "projects"
+msgstr "proyectos"
+
+#: cv/models/skill.py:11
+msgid "skill category"
+msgstr "categoría de habilidad"
+
+#: cv/models/skill.py:12
+msgid "skill categories"
+msgstr "categorías de habilidad"
+
+#: cv/models/skill.py:27
+msgid "skill"
+msgstr "habilidad"
+
+#: cv/models/skill.py:28
+msgid "skills"
+msgstr "habilidades"
 
 #: templates/cv/sections/profile.html:3
 msgid "Profile"

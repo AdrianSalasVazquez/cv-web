@@ -14,8 +14,6 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-from django.utils.translation import gettext_lazy as _
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
@@ -36,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,8 +49,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "django.middleware.locale.LocaleMiddleware", 
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware', 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -115,9 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'en'
 
-LANGUAGES = [("es", _("Español")), ("en", _("English"))]
+LANGUAGES = [("en", "English"), ("es", "Español")]
 
 LOCALE_PATHS = [BASE_DIR / "locale"]
 
@@ -128,6 +127,9 @@ USE_I18N = True
 USE_TZ = True
 
 PHONENUMBER_DEFAULT_REGION = "ES"
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = "en"
+MODELTRANSLATION_FALLBACK_LANGUAGES = ("en",)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
